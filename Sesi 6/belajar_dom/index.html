@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM
+    </title>
+</head>
+<body>
+    <h1>Belajar DOM</h1>
+    <div id="hasil"></div>
+    <script>
+        document.write("Hello World");
+        document.write("<h1>Hello World H1</h1>");
+        
+        var heading = "<h3>Hello Heading H3</h3>";
+        document.getElementById("hasil").innerHTML = heading;
+
+
+        for(var i = 0; i < 5; i++){
+            document.write(heading);
+        }
+
+        console.log(i);
+
+        for(let j = 0; j < 5; j++){
+            document.write(heading);
+        }
+        console.log(j);
+    </script>
+</body>
+</html>
